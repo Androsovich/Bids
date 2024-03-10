@@ -7,8 +7,6 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
 import org.androsovich.applications.repositories.TokenRepository;
 import org.androsovich.applications.services.security.JwtService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.lang.NonNull;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,8 +23,6 @@ import static org.androsovich.applications.constants.Constants.*;
 @Component
 @AllArgsConstructor
 public class AuthenticationTokenFilter extends OncePerRequestFilter {
-
-    private static final Logger logger = LoggerFactory.getLogger(AuthenticationTokenFilter.class);
 
     private final UserDetailsService userDetailsService;
     private final TokenRepository tokenRepository;
@@ -52,7 +48,7 @@ public class AuthenticationTokenFilter extends OncePerRequestFilter {
         if (userName != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = this.userDetailsService.loadUserByUsername(userName);
 
-            var isTokenValid = tokenRepository.findByToken(jwt)
+            boolean isTokenValid = tokenRepository.findByToken(jwt)
                     .map(token -> !token.isExpired() && !token.isRevoked())
                     .orElse(false);
 

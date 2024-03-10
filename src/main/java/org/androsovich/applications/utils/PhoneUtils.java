@@ -10,6 +10,9 @@ import static org.androsovich.applications.constants.Constants.*;
 
 public class PhoneUtils {
 
+    private PhoneUtils() {
+    }
+
     public static Phone processingResponse(Phone[] responsePhone) {
         if (responsePhone.length > 1) {
             throw new BadFeignResponseException(BAD_FEIGN_RESPONSE + responsePhone.length);

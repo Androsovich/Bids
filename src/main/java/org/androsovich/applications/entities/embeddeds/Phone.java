@@ -1,6 +1,5 @@
 package org.androsovich.applications.entities.embeddeds;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.Transient;

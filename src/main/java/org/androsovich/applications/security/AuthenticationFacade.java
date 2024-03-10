@@ -3,13 +3,9 @@ package org.androsovich.applications.security;
 import org.androsovich.applications.entities.User;
 import org.androsovich.applications.exceptions.UserNotFoundException;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
-import java.util.Collection;
-import java.util.List;
 import java.util.Optional;
 
 import static org.androsovich.applications.constants.Constants.AUTH_USER_NOT_FOUND_ID;

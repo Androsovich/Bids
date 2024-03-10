@@ -5,7 +5,6 @@ import org.androsovich.applications.dto.bid.BidRequest;
 import org.androsovich.applications.entities.Bid;
 import org.androsovich.applications.entities.User;
 import org.modelmapper.ModelMapper;
-import org.modelmapper.PropertyMap;
 import org.modelmapper.TypeMap;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
