@@ -19,6 +19,8 @@
 		<model.mapper.version>3.1.1</model.mapper.version>
 		<spring-cloud.version>2023.0.0</spring-cloud.version>
 		<feign.version>13.1</feign.version>
+		<httpclient5.version>5.2</httpclient5.version>
+		<wiremock.version>3.3.1</wiremock.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -113,6 +115,17 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents.client5</groupId>
+			<artifactId>httpclient5</artifactId>
+			<version>${httpclient5.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.wiremock</groupId>
+			<artifactId>wiremock-standalone</artifactId>
+			<version>${wiremock.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

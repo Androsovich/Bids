@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: phoneClient
+#  cloud:
+#    loadbalancer:
+#      ribbon:
+#        enabled: false
+#    discovery:
+#      client:
+#        simple:
+#          instances:
+#            phoneClient:
+#              uri: http://localhost:80

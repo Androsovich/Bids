@@ -1,0 +1,18 @@
+[
+  {
+    "source": "+7 911 243-45-68",
+    "type": "Мобильный",
+    "phone": "+7 911 243-45-68",
+    "country_code": "7",
+    "city_code": "911",
+    "number": "2434568",
+    "extension": null,
+    "provider": "ПАО \"Мобильные ТелеСистемы\"",
+    "country": "Россия",
+    "region": "Санкт-Петербург и Ленинградская область",
+    "city": null,
+    "timezone": "UTC+3",
+    "qc_conflict": 0,
+    "qc": 0
+  }
+]
